@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Fontes utilizadas*/
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+
+/* O root facilita na escolha as fontes, pode ser usado com cores também */
+:root{
+    --fonte1: 'Verdana', Geneva, Tahoma, sans-serif;
+    --fonte2: 'Zilla Slab', serif;
+    --fonte3: 'Special Elite', cursive;
+
+}
+
+/*Configuração Geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Configuração do HTML e BODY*/
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+/* Configurações do Header*/
+header{
+    background-color: rgb(14, 14, 14);
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw;
+    /* text-transform: uppercase; Deixa tudo maiuscula*/
+}
+
+
+header > p{
+    padding-bottom: 50px;
+}
+
+/* Configuração Geral dos Links*/
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Configuração de animação dos links que estão no Header e no Footer (Rodapé) */
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+/*Configurações das Section*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466);
+}
+
+section#img1{
+    background-image: url(imagens/background1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+ /* Configurações do Footer (Rodapé) */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
