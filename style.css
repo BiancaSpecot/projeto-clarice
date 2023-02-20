@@ -36,7 +36,7 @@ header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 5vw;
+    font-size: 4.5vw;
     /* text-transform: uppercase; Deixa tudo maiuscula*/
 }
 
@@ -65,7 +65,7 @@ section{
     line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 section > p{
     padding-bottom: 2em;
